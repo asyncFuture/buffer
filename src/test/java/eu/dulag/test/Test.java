@@ -11,16 +11,13 @@ public class Test {
         Buffer heap = ByteBuf.heap();
         heap.writeInt(2022);
 
-        heap.detach();
-
         System.out.println(Arrays.toString(heap.array()));
         System.out.println("available heap buffers: " + ByteBuf.free(false));
 
         System.out.println(heap + " free=" + ByteBuf.isFree(heap));
 
-        heap.writeInt(2022);
-
         System.out.println(Arrays.toString(heap.array()));
+
         heap.detach();
         System.out.println(heap + " was detached");
 
