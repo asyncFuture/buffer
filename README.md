@@ -2,8 +2,9 @@
 
 an extension of the nio buffer
 
-## Example
+This is a small library based on Nio. It allows you to take a buffer from a survey, the condition is that the buffer must be free. The good thing is that the buffers are reused, so you save more memory.
 
+## Example
 
 ## Poll buffer
 
