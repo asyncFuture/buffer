@@ -3,22 +3,21 @@
 an extension of the nio buffer
 
 This is a small library based on Nio. It allows you to take a buffer from a survey, the condition is that the buffer must be free. The good thing is that the buffers are reused, so you save more memory.
+###
+![](../../Desktop/showcase.png)
 
-## Example
 
 ## Poll buffer
-
-Heap
+#### Heap
 ````java
 Buffer buffer = ByteBuf.heap();
 ````
-
-Direct
+#### Direct
 ````java
 Buffer buffer = ByteBuf.direct();
 ````
 
-Use of the buffer
+#### 1Use of the buffer
 ````java
 //poll a buffer
 buffer.writeInt(2022);
